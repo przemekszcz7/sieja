@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { Clock, Moon, Sparkles } from "lucide-react";
+import { Clock } from "lucide-react";
 import { OPENING_HOURS } from "../data";
 
 export default function OpeningHours() {
@@ -72,10 +72,6 @@ export default function OpeningHours() {
                   <span className="font-mono text-sm tracking-wider text-[#dfc8af]/90 font-medium">
                     {slot.hours}
                   </span>
-                  {/* Accent star on weekend */}
-                  {(slot.day === "Sobota" || slot.day === "Niedziela") && (
-                    <Sparkles className="w-3.5 h-3.5 text-[#c2a176] animate-pulse" />
-                  )}
                 </div>
               </div>
             ))}

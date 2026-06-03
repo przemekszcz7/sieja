@@ -28,7 +28,7 @@ export interface FoodItem {
 
 export interface Review {
   id: string;
-  author: string;
+  author?: string;
   rating: number;
   text: string;
   date: string;

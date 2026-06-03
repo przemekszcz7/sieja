@@ -66,9 +66,6 @@ export default function Reviews() {
               {/* Author metadata panel */}
               <div className="flex items-center justify-between border-t border-[#f4efe9]/10 pt-5 mt-auto">
                 <div className="text-left">
-                  <h4 className="font-serif text-lg font-bold text-[#f4efe9]">
-                    {review.author}
-                  </h4>
                   <span className="text-[10px] uppercase tracking-wider font-mono text-[#c2a176]">
                     {review.source}
                   </span>

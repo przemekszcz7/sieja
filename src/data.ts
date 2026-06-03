@@ -123,7 +123,6 @@ export const FOOD_CARDS = [
 export const REVIEWS: Review[] = [
   {
     id: "r1",
-    author: "Mirosław Wiśniewski",
     rating: 5,
     text: "Pyszna ryba w zacisznym miejscu nad samym brzegiem jeziora. Przyjemny klimat z dala od tłumów i hałasu. Polecam!",
     date: "Maj 2026",
@@ -131,7 +130,6 @@ export const REVIEWS: Review[] = [
   },
   {
     id: "r2",
-    author: "Katarzyna Grabowska",
     rating: 5,
     text: "Pyszne jedzonko i świeżutkie ryby. Bardzo miła obsługa, będziemy wracać. Polecam!",
     date: "Kwiecień 2026",
@@ -139,7 +137,6 @@ export const REVIEWS: Review[] = [
   },
   {
     id: "r3",
-    author: "Janusz Kowalczyk",
     rating: 5,
     text: "Super miejscówka. Cisza spokój. Jedzenie przepyszne. Bardzo mili, gościnni właściciele.",
     date: "Maj 2026",
