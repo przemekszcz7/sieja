@@ -1,0 +1,6 @@
+{
+  "name": "Gościniec Wędkarski SIEJA",
+  "description": "Ekskluzywny gościniec nad jeziorem stworzony dla wędkarzy, rodzin oraz osób szukających ciszy, spokoju i kontaktu z naturą w rustykalnym luksusie.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

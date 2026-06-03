@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-gold-light: #dfc8af;
+  --color-gold: #c2a176;
+  --color-gold-dark: #8e6d45;
+  
+  --color-pine: #162e24;
+  --color-pine-light: #244437;
+  --color-pine-dark: #0b1913;
+  
+  --color-wood: #211915;
+  --color-wood-light: #372a24;
+  --color-wood-dark: #120e0c;
+}
+
+/* Base resets & typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+.font-serif-italic {
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #120e0c;
+}
+::-webkit-scrollbar-thumb {
+  background: #244437;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c2a176;
+}
+
+/* Custom fade in animation on scroll utility classes */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Decorative glassmorphism classes */
+.glass-panel {
+  background: rgba(33, 25, 21, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(194, 161, 118, 0.08);
+}
+
+.glass-panel-light {
+  background: rgba(244, 239, 233, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(244, 239, 233, 0.05);
+}
+
+.glass-panel-green {
+  background: rgba(22, 46, 36, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(194, 161, 118, 0.12);
+}
+
+/* Wood grain style backdrop overlay */
+.bg-wood-pattern {
+  background-image: linear-gradient(135deg, rgba(18, 14, 12, 0.98) 0%, rgba(33, 25, 21, 0.96) 100%);
+}
